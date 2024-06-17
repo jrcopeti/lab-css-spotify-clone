@@ -6,3 +6,83 @@ Green: #00B172
 White: #FFF
 
 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav > img {
+  width: 200px;
+  height: auto;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.main-image {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100dvh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-image section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+
+}
+.main-image h1 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 100;
+  font-size: 5rem;
+}
+
+.main-image h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 100;
+  font-size: 2rem;
+}
